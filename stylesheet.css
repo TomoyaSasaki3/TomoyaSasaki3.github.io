@@ -1,1 +1,466 @@
 
+/* =========================
+   Base
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Noto Sans JP",
+        sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 15px 5%;
+    background: #fff;
+    border-bottom: 1px solid #e8ebef;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #263c5a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    font-size: 13px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #426b9b;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 90px 24px;
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #263c5a;
+    margin-bottom: 50px;
+}
+
+/* セクション内のコンテンツ幅 */
+
+#about,
+#research,
+#qualifications {
+    text-align: center;
+}
+
+#about > h3,
+#research > h3 {
+    max-width: 800px;
+    margin: 30px auto 12px;
+    text-align: left;
+    font-size: 18px;
+    color: #263c5a;
+}
+
+#about > p,
+#research > p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* =========================
+   Home
+========================= */
+
+#home {
+    min-height: 520px;
+    padding: 80px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background: linear-gradient(135deg, #edf2f8, #e3eaf3);
+}
+
+#home p:first-child {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #607d9e;
+}
+
+#home h1 {
+    margin: 20px 0 10px;
+    font-size: clamp(48px, 7vw, 72px);
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #263c5a;
+}
+
+#home p:nth-of-type(2) {
+    font-size: 22px;
+    color: #394b61;
+}
+
+#home p:last-child {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6b7787;
+}
+
+
+/* =========================
+   About
+========================= */
+
+#about dl {
+    max-width: 800px;
+    margin: 30px auto 0;
+    border-top: 1px solid #dfe4ea;
+    text-align: left;
+}
+
+#about dt,
+#about dd {
+    padding: 13px 20px;
+    border-bottom: 1px solid #dfe4ea;
+    font-size: 14px;
+}
+
+#about dt {
+    float: left;
+    width: 180px;
+    font-weight: 600;
+    color: #536d8c;
+    clear: both;
+}
+
+#about dd {
+    margin-left: 180px;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+#skills {
+    background: #f5f7fa;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    justify-content: center;
+}
+
+#skills h2 {
+    grid-column: 1 / -1;
+}
+
+#skills article {
+    width: 100%;
+    max-width: 440px;
+    justify-self: center;
+    padding: 30px;
+
+    background: #fff;
+    border: 1px solid #e6eaf0;
+    border-radius: 8px;
+    text-align: left;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#skills article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(38, 60, 90, 0.07);
+}
+
+#skills h3 {
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #263c5a;
+}
+
+#skills ul,
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+#skills li,
+#projects li {
+    padding: 5px 14px;
+    border-radius: 4px;
+    background: #edf2f8;
+    color: #496583;
+    font-size: 12px;
+}
+
+
+/* =========================
+   Projects
+========================= */
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+#projects article {
+    width: 100%;
+    max-width: 440px;
+    justify-self: center;
+    padding: 30px;
+
+    border: 1px solid #e6eaf0;
+    border-radius: 8px;
+    background: #fff;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(38, 60, 90, 0.08);
+}
+
+#projects h3 {
+    margin-bottom: 5px;
+    font-size: 19px;
+    color: #263c5a;
+}
+
+#projects article > p:first-of-type {
+    margin-bottom: 15px;
+    color: #7890aa;
+    font-size: 12px;
+}
+
+#projects article > p:nth-of-type(2) {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Research
+========================= */
+
+#research {
+    background: #f5f7fa;
+}
+
+#research > p {
+    padding: 0;
+}
+
+#research > h3 {
+    margin-top: 30px;
+}
+
+
+/* =========================
+   Qualifications
+========================= */
+
+#qualifications ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+    border-top: 1px solid #dfe4ea;
+    text-align: left;
+}
+
+#qualifications li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #dfe4ea;
+    font-size: 14px;
+}
+
+#qualifications time {
+    min-width: 100px;
+    color: #7890aa;
+    font-weight: 500;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    padding: 40px 20px;
+    background: #263c5a;
+    color: #fff;
+    text-align: center;
+}
+
+footer p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+footer p:nth-child(2) {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+footer p:last-child {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #b8c4d2;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 15px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    section > h2 {
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+
+    #skills,
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    #skills h2,
+    #projects h2 {
+        grid-column: 1;
+    }
+
+    #skills article,
+    #projects article {
+        max-width: 500px;
+    }
+
+    #about dt {
+        width: 120px;
+    }
+
+    #about dd {
+        margin-left: 120px;
+    }
+
+    #about dt,
+    #about dd {
+        padding: 12px 10px;
+    }
+
+    #qualifications li {
+        gap: 15px;
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #about dt,
+    #about dd,
+    #qualifications li {
+        font-size: 12px;
+    }
+
+    #about dt {
+        width: 95px;
+    }
+
+    #about dd {
+        margin-left: 95px;
+    }
+}
