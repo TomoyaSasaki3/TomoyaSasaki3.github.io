@@ -1,271 +1,434 @@
+
+/* =========================
+   Base
+========================= */
+
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Noto Sans JP",
+        sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.8;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: inherit;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+.section {
+    padding: 90px 10%;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+.section-gray {
+    background-color: #f6f7f9;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-}
 
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
+/* =========================
+   Header
+========================= */
 
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #263c5a;
 }
 
-.header-left {
-  float: left;
+nav {
+    display: flex;
+    gap: 25px;
 }
 
-.header-right {
-  float: right;
-  margin-right: -25px;
+nav a {
+    font-size: 13px;
+    color: #555;
+    transition: color 0.3s;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+nav a:hover {
+    color: #315b8a;
 }
 
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #edf1f6;
+    padding: 80px 20px;
 }
 
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+.hero-label {
+    color: #536d8c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+.hero h1 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #263c5a;
+    letter-spacing: 3px;
+    margin: 15px 0;
 }
 
-.heading h2 {
-  font-weight: normal;
+.hero-name {
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.lesson {
-  float: left;
-  width: 25%;
+.hero-description {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
-.lesson-icon {
-  position: relative;
+
+/* =========================
+   Section Heading
+========================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
+.section-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #607d9e;
+    letter-spacing: 3px;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
+.section-heading h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #263c5a;
+    margin-top: 5px;
 }
 
-.heading h3 {
-  font-weight: normal;
+
+/* =========================
+   About
+========================= */
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
 }
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
+.about-profile {
+    margin-bottom: 35px;
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
+.about-profile h3,
+.research-content h3 {
+    font-size: 18px;
+    color: #263c5a;
+    margin-bottom: 12px;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.about-profile p,
+.research-content p {
+    font-size: 14px;
+    color: #555;
 }
 
-footer img {
-  width: 125px;
+.profile-table {
+    border-top: 1px solid #ddd;
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.profile-row {
+    display: flex;
+    padding: 13px 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
 }
+
+.profile-row span:first-child {
+    width: 160px;
+    font-weight: 600;
+    color: #536d8c;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+.skills-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 25px;
+    border: 1px solid #e5e8ec;
+    border-radius: 6px;
+}
+
+.skill-card h3 {
+    font-size: 16px;
+    color: #263c5a;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   Tags
+========================= */
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-list span {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #edf1f6;
+    color: #465e7b;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+
+/* =========================
+   Projects
+========================= */
+
+.projects-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    border: 1px solid #e5e8ec;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.project-image {
+    height: 180px;
+    background-color: #e9edf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8190a2;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    font-size: 19px;
+    color: #263c5a;
+}
+
+.project-category {
+    font-size: 12px;
+    color: #7890aa;
+    margin: 5px 0 15px;
+}
+
+.project-content > p:not(.project-category) {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Research
+========================= */
+
+.research-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.research-content h3:not(:first-child) {
+    margin-top: 30px;
+}
+
+.research-lab {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Qualifications
+========================= */
+
+.qualification-list {
+    max-width: 850px;
+    margin: 0 auto;
+    list-style: none;
+    border-top: 1px solid #ddd;
+}
+
+.qualification-list li {
+    display: flex;
+    gap: 30px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.qualification-list li span:first-child {
+    color: #7890aa;
+    min-width: 100px;
+}
+
+
+/* =========================
+   Footer
+========================= */
 
 footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
-}
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
+    background-color: #263c5a;
+    color: #fff;
     text-align: center;
-  }
+    padding: 35px 20px;
 }
 
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
+footer > p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
+.footer-name {
+    font-size: 13px;
+    margin-top: 5px;
+}
 
-  .menu-icon {
-    display: block;
-  }
+.copyright {
+    font-size: 11px;
+    color: #b8c4d2;
+    margin-top: 20px;
+}
 
-  .top-wrapper .btn {
-    width: 100%;
-  }
 
-  .twitter {
-    margin-top: 10px;
-  }
+/* =========================
+   Responsive
+========================= */
 
-  .top-wrapper {
-    text-align: left;
-  }
+@media screen and (max-width: 768px) {
 
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 15px;
+    }
 
-  .top-wrapper p {
-    font-size: 14px;
-  }
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
 
-  .lesson {
-    width: 100%;
-  }
+    nav a {
+        font-size: 12px;
+    }
 
-  .lesson-wrapper {
-    height: 1700px;
-  }
+    .hero {
+        min-height: 380px;
+    }
 
-  .message-wrapper .btn {
-    width: 100%;
-  }
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .section {
+        padding: 65px 6%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-row {
+        gap: 10px;
+    }
+
+    .profile-row span:first-child {
+        width: 110px;
+        flex-shrink: 0;
+    }
+
+    .qualification-list li {
+        gap: 15px;
+    }
 }
