@@ -1,90 +1,231 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <a href="#home" class="logo">PORTFOLIO</a>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#research">Research</a>
+                <a href="#qualifications">Qualifications</a>
+            </nav>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-label">INFORMATION SCIENCE STUDENT</p>
+                <h1>Portfolio</h1>
+                <p class="hero-name">Your Name</p>
+                <p class="hero-description">
+                    大学・学部・学科・専攻などを記入
+                </p>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="section-label">ABOUT</p>
+                <h2>自己紹介</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-profile">
+                    <h3>Profile</h3>
+                    <p>
+                        <!-- 自己紹介を記入 -->
+                        ここに自己紹介を記入してください。
+                    </p>
+                </div>
+
+                <div class="profile-table">
+                    <div class="profile-row">
+                        <span>大学</span>
+                        <span>大学名</span>
+                    </div>
+                    <div class="profile-row">
+                        <span>学部・学科</span>
+                        <span>学部・学科名</span>
+                    </div>
+                    <div class="profile-row">
+                        <span>専攻</span>
+                        <span>専攻名</span>
+                    </div>
+                    <div class="profile-row">
+                        <span>研究室</span>
+                        <span>研究室名</span>
+                    </div>
+                    <div class="profile-row">
+                        <span>学年</span>
+                        <span>大学3年</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section section-gray">
+            <div class="section-heading">
+                <p class="section-label">SKILLS</p>
+                <h2>技術・スキル</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <div class="tag-list">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Frameworks / Libraries</h3>
+                    <div class="tag-list">
+                        <span>Flask</span>
+                        <span>ライブラリ名</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools / Environment</h3>
+                    <div class="tag-list">
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <div class="tag-list">
+                        <span>MySQL</span>
+                        <span>その他</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="section-label">PROJECTS</p>
+                <h2>制作・開発経験</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 01 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <span>PROJECT 01</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>プロジェクト名</h3>
+                        <p class="project-category">Web Application</p>
+                        <p>
+                            <!-- プロジェクト概要を記入 -->
+                            制作物の概要や目的を簡潔に記入してください。
+                        </p>
+                        <div class="tag-list">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 02 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <span>PROJECT 02</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>プロジェクト名</h3>
+                        <p class="project-category">Programming</p>
+                        <p>
+                            <!-- プロジェクト概要を記入 -->
+                            制作物の概要や目的を簡潔に記入してください。
+                        </p>
+                        <div class="tag-list">
+                            <span>使用技術</span>
+                            <span>使用技術</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research" class="section section-gray">
+            <div class="section-heading">
+                <p class="section-label">RESEARCH</p>
+                <h2>研究活動</h2>
+            </div>
+
+            <div class="research-content">
+                <h3>所属研究室</h3>
+                <p class="research-lab">研究室名を記入</p>
+
+                <h3>研究分野・興味のあるテーマ</h3>
+                <p>
+                    <!-- 研究分野や興味のあるテーマを記入 -->
+                    研究室で取り組んでいる分野や、興味のある研究テーマを記入してください。
+                </p>
+            </div>
+        </section>
+
+        <!-- Qualifications -->
+        <section id="qualifications" class="section">
+            <div class="section-heading">
+                <p class="section-label">QUALIFICATIONS</p>
+                <h2>資格</h2>
+            </div>
+
+            <ul class="qualification-list">
+                <li>
+                    <span>20XX年</span>
+                    <span>資格名を記入</span>
+                </li>
+                <li>
+                    <span>20XX年</span>
+                    <span>資格名を記入</span>
+                </li>
+                <li>
+                    <span>20XX年</span>
+                    <span>資格名を記入</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>PORTFOLIO</p>
+        <p class="footer-name">Your Name</p>
+        <p class="copyright">&copy; 2026 Your Name</p>
+    </footer>
+
 </body>
 </html>
