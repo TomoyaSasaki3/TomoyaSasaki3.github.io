@@ -5,226 +5,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Your Name</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <div class="header-inner">
-            <a href="#home" class="logo">PORTFOLIO</a>
+        <a href="#home" class="logo">PORTFOLIO</a>
 
-            <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#research">Research</a>
-                <a href="#qualifications">Qualifications</a>
-            </nav>
-        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#qualifications">Qualifications</a>
+        </nav>
     </header>
 
     <main>
 
         <!-- Home -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <p class="hero-label">INFORMATION SCIENCE STUDENT</p>
-                <h1>Portfolio</h1>
-                <p class="hero-name">Your Name</p>
-                <p class="hero-description">
-                    大学・学部・学科・専攻などを記入
-                </p>
-            </div>
+        <section id="home">
+            <p>INFORMATION SCIENCE STUDENT</p>
+            <h1>Portfolio</h1>
+            <p>Your Name</p>
+            <p>大学・学部・学科・専攻</p>
         </section>
 
         <!-- About -->
-        <section id="about" class="section">
-            <div class="section-heading">
-                <p class="section-label">ABOUT</p>
-                <h2>自己紹介</h2>
-            </div>
+        <section id="about">
+            <h2>自己紹介</h2>
 
-            <div class="about-content">
-                <div class="about-profile">
-                    <h3>Profile</h3>
-                    <p>
-                        <!-- 自己紹介を記入 -->
-                        ここに自己紹介を記入してください。
-                    </p>
-                </div>
+            <h3>Profile</h3>
+            <p>
+                ここに自己紹介を記入してください。
+            </p>
 
-                <div class="profile-table">
-                    <div class="profile-row">
-                        <span>大学</span>
-                        <span>大学名</span>
-                    </div>
-                    <div class="profile-row">
-                        <span>学部・学科</span>
-                        <span>学部・学科名</span>
-                    </div>
-                    <div class="profile-row">
-                        <span>専攻</span>
-                        <span>専攻名</span>
-                    </div>
-                    <div class="profile-row">
-                        <span>研究室</span>
-                        <span>研究室名</span>
-                    </div>
-                    <div class="profile-row">
-                        <span>学年</span>
-                        <span>大学3年</span>
-                    </div>
-                </div>
-            </div>
+            <dl>
+                <dt>大学</dt>
+                <dd>大学名</dd>
+
+                <dt>学部・学科</dt>
+                <dd>学部・学科名</dd>
+
+                <dt>専攻</dt>
+                <dd>専攻名</dd>
+
+                <dt>研究室</dt>
+                <dd>研究室名</dd>
+
+                <dt>学年</dt>
+                <dd>大学3年</dd>
+            </dl>
         </section>
 
         <!-- Skills -->
-        <section id="skills" class="section section-gray">
-            <div class="section-heading">
-                <p class="section-label">SKILLS</p>
-                <h2>技術・スキル</h2>
-            </div>
+        <section id="skills">
+            <h2>技術・スキル</h2>
 
-            <div class="skills-grid">
+            <article>
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                </ul>
+            </article>
 
-                <div class="skill-card">
-                    <h3>Programming Languages</h3>
-                    <div class="tag-list">
-                        <span>Python</span>
-                        <span>Java</span>
-                        <span>C</span>
-                    </div>
-                </div>
+            <article>
+                <h3>Frameworks / Libraries</h3>
+                <ul>
+                    <li>Flask</li>
+                    <li>ライブラリ名</li>
+                </ul>
+            </article>
 
-                <div class="skill-card">
-                    <h3>Frameworks / Libraries</h3>
-                    <div class="tag-list">
-                        <span>Flask</span>
-                        <span>ライブラリ名</span>
-                    </div>
-                </div>
+            <article>
+                <h3>Tools / Environment</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>VS Code</li>
+                </ul>
+            </article>
 
-                <div class="skill-card">
-                    <h3>Tools / Environment</h3>
-                    <div class="tag-list">
-                        <span>Git</span>
-                        <span>Docker</span>
-                        <span>VS Code</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Database</h3>
-                    <div class="tag-list">
-                        <span>MySQL</span>
-                        <span>その他</span>
-                    </div>
-                </div>
-
-            </div>
+            <article>
+                <h3>Database</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>その他</li>
+                </ul>
+            </article>
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="section">
-            <div class="section-heading">
-                <p class="section-label">PROJECTS</p>
-                <h2>制作・開発経験</h2>
-            </div>
+        <section id="projects">
+            <h2>制作・開発経験</h2>
 
-            <div class="projects-grid">
+            <article>
+                <h3>プロジェクト名</h3>
+                <p>Web Application</p>
+                <p>
+                    制作物の概要や目的を簡潔に記入してください。
+                </p>
+                <ul>
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>MySQL</li>
+                </ul>
+            </article>
 
-                <!-- Project 01 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <span>PROJECT 01</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>プロジェクト名</h3>
-                        <p class="project-category">Web Application</p>
-                        <p>
-                            <!-- プロジェクト概要を記入 -->
-                            制作物の概要や目的を簡潔に記入してください。
-                        </p>
-                        <div class="tag-list">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 02 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <span>PROJECT 02</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>プロジェクト名</h3>
-                        <p class="project-category">Programming</p>
-                        <p>
-                            <!-- プロジェクト概要を記入 -->
-                            制作物の概要や目的を簡潔に記入してください。
-                        </p>
-                        <div class="tag-list">
-                            <span>使用技術</span>
-                            <span>使用技術</span>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
+            <article>
+                <h3>プロジェクト名</h3>
+                <p>Programming</p>
+                <p>
+                    制作物の概要や目的を簡潔に記入してください。
+                </p>
+                <ul>
+                    <li>使用技術</li>
+                    <li>使用技術</li>
+                </ul>
+            </article>
         </section>
 
         <!-- Research -->
-        <section id="research" class="section section-gray">
-            <div class="section-heading">
-                <p class="section-label">RESEARCH</p>
-                <h2>研究活動</h2>
-            </div>
+        <section id="research">
+            <h2>研究活動</h2>
 
-            <div class="research-content">
-                <h3>所属研究室</h3>
-                <p class="research-lab">研究室名を記入</p>
+            <h3>所属研究室</h3>
+            <p>研究室名を記入</p>
 
-                <h3>研究分野・興味のあるテーマ</h3>
-                <p>
-                    <!-- 研究分野や興味のあるテーマを記入 -->
-                    研究室で取り組んでいる分野や、興味のある研究テーマを記入してください。
-                </p>
-            </div>
+            <h3>研究分野・興味のあるテーマ</h3>
+            <p>
+                研究室で取り組んでいる分野や、
+                興味のある研究テーマを記入してください。
+            </p>
         </section>
 
         <!-- Qualifications -->
-        <section id="qualifications" class="section">
-            <div class="section-heading">
-                <p class="section-label">QUALIFICATIONS</p>
-                <h2>資格</h2>
-            </div>
+        <section id="qualifications">
+            <h2>資格</h2>
 
-            <ul class="qualification-list">
+            <ul>
                 <li>
-                    <span>20XX年</span>
-                    <span>資格名を記入</span>
+                    <time datetime="20XX">20XX年</time>
+                    資格名を記入
                 </li>
                 <li>
-                    <span>20XX年</span>
-                    <span>資格名を記入</span>
+                    <time datetime="20XX">20XX年</time>
+                    資格名を記入
                 </li>
                 <li>
-                    <span>20XX年</span>
-                    <span>資格名を記入</span>
+                    <time datetime="20XX">20XX年</time>
+                    資格名を記入
                 </li>
             </ul>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>PORTFOLIO</p>
-        <p class="footer-name">Your Name</p>
-        <p class="copyright">&copy; 2026 Your Name</p>
+        <p>Your Name</p>
+        <p>&copy; 2026 Your Name</p>
     </footer>
 
 </body>
